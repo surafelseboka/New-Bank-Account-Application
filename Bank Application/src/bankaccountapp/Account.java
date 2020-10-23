@@ -38,7 +38,7 @@ public abstract class Account implements IRate {
 	
 public void showInfo() {
 		
-		System.out.println(
+		System.out.println( 
 			"NAME: " + name +
 			"\nACCOUNT NUMBER: " + accountNumber +
 			"\nBALANCE: $" + balance );
