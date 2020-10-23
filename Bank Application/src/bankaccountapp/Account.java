@@ -22,11 +22,13 @@ public abstract class Account implements IRate {
 		this.balance = initDeposit;
 		
 		//set account numbers 
-		
-		this.accountNumber = setAccountNumber();
 		index++;
-	}
+		this.accountNumber = setAccountNumber();
+		setRate();
+		
+			}
 	
+	public abstract void setRate();
 
 	private String setAccountNumber () {
 		
@@ -41,7 +43,9 @@ public void showInfo() {
 		System.out.println( 
 			"NAME: " + name +
 			"\nACCOUNT NUMBER: " + accountNumber +
-			"\nBALANCE: $" + balance );
+			"\nBALANCE: $" + balance +
+			"\nRATE: " + rate + "%" 
+				);
 		
 	}
 	
