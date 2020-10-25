@@ -2,6 +2,11 @@ package bankaccountapp;
 
 import java.util.LinkedList;
 import java.util.List;
+/*
+ * @Author: Surafel seboka
+ * @Title: New Bank Account Application
+ */
+
 public class BankAccountApp {
 
 	public static void main(String[] args) {
